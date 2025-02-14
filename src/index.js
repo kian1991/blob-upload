@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // connecting router
-app.route('/storage', router);
+app.use('/storage', router);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
